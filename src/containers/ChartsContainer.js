@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Charts from '../components/Charts';
 
 const ChartsContainer = () => {
 
@@ -12,7 +13,7 @@ const ChartsContainer = () => {
     }
 
     return(
-        <button onClick={getCharts}>Get Charts</button>
+        <Charts onSelectedGetCharts={() => getCharts()}/>
     )
 
 }
